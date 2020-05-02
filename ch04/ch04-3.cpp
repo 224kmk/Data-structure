@@ -37,13 +37,13 @@ void printList(linkedList_h* CL) {
 
 // 첫 번째 노드 삽입 연산
 void insertFirstNode(linkedList_h* CL, char* x) {
-	listNode* newNode, *temp; // <<
+	listNode* newNode, * temp; // <<
 	newNode = (listNode*)malloc(sizeof(listNode));		// 삽입할 새 노드 할당
 	strcpy(newNode->data, x);
 	if (CL->head == NULL) {			// 원형 연결 리스트가 공백인 경우
 		CL->head = newNode;			// 새 노드를 리스트의 시작 노드로 연결
 		newNode->link = newNode;
-}
+	}
 	else {					// 원형 리스트가 공백이 아닌 경우
 		temp = CL->head;
 		while (temp->link != CL->head)
@@ -110,7 +110,7 @@ int main() {
 	getchar();
 
 	printf("(2) 원형 연결 리스트에 [월] 노드 삽입하기! \n");
-	insertFirstNode(CL, (char *)"월");
+	insertFirstNode(CL, (char*)"월");
 	printList(CL); getchar();
 
 	printf("(3) 원형 연결 리스트에 [월] 노드 뒤에 [수] 노드 삽입하기! \n");
