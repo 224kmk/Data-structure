@@ -87,7 +87,7 @@ void main() {
 
 	// ±×·¡ÇÁ G2
 	for (i = 0; i < 3; i++)
-		insertVertex(G2, i);	// G2ÀÇ Á¤Á¡ 0~3 »ðÀÔ
+		insertVertex(G2, i);	// G2ÀÇ Á¤Á¡ 0~2 »ðÀÔ
 	insertEdge(G2, 0, 2);
 	insertEdge(G2, 0, 1);
 	insertEdge(G2, 1, 2);
@@ -110,7 +110,7 @@ void main() {
 
 	// ±×·¡ÇÁ G4
 	for (i = 0; i < 3; i++)
-		insertVertex(G4, 1);	// G4ÀÇ Á¤Á¡ 0~3 »ðÀÔ
+		insertVertex(G4, 1);	// G4ÀÇ Á¤Á¡ 0~2 »ðÀÔ
 	insertEdge(G4, 0, 2);
 	insertEdge(G4, 0, 1);
 	insertEdge(G4, 1, 2);
